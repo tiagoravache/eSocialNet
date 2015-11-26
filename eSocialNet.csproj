@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{D7AC8728-E013-4661-AE56-5184B0F3942C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>eSocialNet</RootNamespace>
+    <AssemblyName>eSocialNet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Externalconsole>true</Externalconsole>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Schemas\evtTSVTermino.cs" />
+    <Compile Include="Schemas\evtTSVInicio.cs" />
+    <Compile Include="Schemas\evtTSVAltContratual.cs" />
+    <Compile Include="Schemas\evtTabRubrica.cs" />
+    <Compile Include="Schemas\evtTabProcesso.cs" />
+    <Compile Include="Schemas\evtTabOperPort.cs" />
+    <Compile Include="Schemas\evtTabLotacao.cs" />
+    <Compile Include="Schemas\evtTabHorTur.cs" />
+    <Compile Include="Schemas\evtTabFuncao.cs" />
+    <Compile Include="Schemas\evtTabEstab.cs" />
+    <Compile Include="Schemas\evtTabCargo.cs" />
+    <Compile Include="Schemas\evtTabAmbTrabalho.cs" />
+    <Compile Include="Schemas\evtSolicTotal.cs" />
+    <Compile Include="Schemas\evtRemunRPPS.cs" />
+    <Compile Include="Schemas\evtRemun.cs" />
+    <Compile Include="Schemas\evtReintegr.cs" />
+    <Compile Include="Schemas\evtReabreEvPer.cs" />
+    <Compile Include="Schemas\evtPgtosNI.cs" />
+    <Compile Include="Schemas\evtPgtos.cs" />
+    <Compile Include="Schemas\evtMonit.cs" />
+    <Compile Include="Schemas\evtIrrfBenef.cs" />
+    <Compile Include="Schemas\evtInsPerApo.cs" />
+    <Compile Include="Schemas\evtInfoEmpregador.cs" />
+    <Compile Include="Schemas\evtInfoComplPer.cs" />
+    <Compile Include="Schemas\evtFechaEvPer.cs" />
+    <Compile Include="Schemas\evtExpRisco.cs" />
+    <Compile Include="Schemas\evtExclusao.cs" />
+    <Compile Include="Schemas\evtDeslig.cs" />
+    <Compile Include="Schemas\evtContrSindPatr.cs" />
+    <Compile Include="Schemas\evtContratAvNP.cs" />
+    <Compile Include="Schemas\evtComProd.cs" />
+    <Compile Include="Schemas\evtCAT.cs" />
+    <Compile Include="Schemas\evtCadInicial.cs" />
+    <Compile Include="Schemas\evtBasesTrab.cs" />
+    <Compile Include="Schemas\evtAvPrevio.cs" />
+    <Compile Include="Schemas\evtAquisProd.cs" />
+    <Compile Include="Schemas\evtAltContratual.cs" />
+    <Compile Include="Schemas\evtAltCadastral.cs" />
+    <Compile Include="Schemas\evtAfastTemp.cs" />
+    <Compile Include="Schemas\evtAdmissaoPreliminar.cs" />
+    <Compile Include="Schemas\evtAdmissao.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
